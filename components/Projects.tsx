@@ -65,7 +65,7 @@ export default function Projects() {
             animate={inView ? { opacity: 1 } : {}}
             className="section-tag"
           >
-            What We've Built
+            What We&apos;ve Built
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -88,11 +88,10 @@ export default function Projects() {
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 border ${
-                  filter === cat
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 border ${filter === cat
                     ? 'border-[var(--accent-cyan)] bg-[var(--accent-cyan)]/10 text-[var(--accent-cyan)]'
                     : 'border-[var(--border-glow)] hover:border-[var(--accent-cyan)]/40'
-                }`}
+                  }`}
                 style={{
                   fontFamily: 'Syne, sans-serif',
                   color: filter === cat ? undefined : 'var(--text-secondary)',
